@@ -1,0 +1,100 @@
+/* Defutly styles for the body  */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+
+/* Styling for the tooltip container */
+.tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-left: 45%;
+  margin-top: 20%;
+  cursor: pointer;
+}
+
+/* Styling for the tooltip text when props passed as 'top' */
+.tooltip .tooltiptext-top{
+  visibility: hidden;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  bottom: 150%;
+  left: 0%;
+}
+
+/* Showing the tooltip text when you mouse hover over the tooltip container */
+.tooltip:hover .tooltiptext-top {
+  visibility: visible;
+}
+
+
+/* Styling for the tooltp text when props passed as 'bottom'*/
+.tooltip .tooltiptext-bottom{
+  visibility: hidden;
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: 150%;
+  left:0%;
+}
+
+/* Showing tooltip text when hover mouse over the tooltip continer */
+.tooltip:hover .tooltiptext-bottom{
+  visibility: visible;
+}
+
+/* Styling for the tooltp text when props passed as 'left'*/
+.tooltip .tooltiptext-left{
+  visibility: hidden;
+  margin-right: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: -20px;
+  right: 105%;
+}
+
+/* Showing the tooltip text when you mouse hover the tooltip container */
+.tooltip:hover .tooltiptext-left {
+  visibility: visible;
+}
+
+/* Styling for the tooltp text when props passed as 'right'*/
+.tooltip .tooltiptext-right{
+  visibility: hidden;
+  margin-left: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: -20px;
+  left: 105%;
+}
+
+/* Showing the tooltip text when you mouse hover the tooltip container */
+.tooltip:hover .tooltiptext-right {
+  visibility: visible;
+}
